@@ -19,7 +19,7 @@ function berechne () {
     if (weiblich) {
        let grundumsatzW = (655.1 + (9.6 * gewicht) + (1.8 * groesse) - (4.7 * alter));
        console.log(grundumsatzW);
-       let gesamtumsatzW = grundumsatzW * 2;
+       let gesamtumsatzW = grundumsatzW * aktivitaet;
        console.log(gesamtumsatzW);
 
        document.querySelector(".grundKcal").innerHTML = grundumsatzW.toFixed();
@@ -30,7 +30,7 @@ function berechne () {
     } else {
        let grundumsatzM = (66.47 + (13.7 * gewicht) + (5 * groesse) - (6.8 * alter));
        console.log(grundumsatzM);
-       let gesamtumsatzM = grundumsatzM * 2;
+       let gesamtumsatzM = grundumsatzM * aktivitaet;
        console.log(gesamtumsatzM);
 
        document.querySelector(".grundKcal").innerHTML = grundumsatzM.toFixed();
