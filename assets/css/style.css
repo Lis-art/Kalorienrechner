@@ -23,6 +23,7 @@ html {
   background-color: rgb(81, 212, 255);
   color: #000;
   margin-bottom: 2%;
+  border-radius: 10px;
 }
 .btn:hover {
   color: rgb(206, 56, 22);
@@ -66,6 +67,7 @@ main #inputFelder input {
   color: #000;
   background-color: rgb(190, 231, 255);
   border: 0.5px solid #000;
+  border-radius: 10px;
   margin-bottom: 3.2%;
 }
 main h3 {
@@ -101,6 +103,7 @@ main #aktivitaet select {
   background-color: rgb(190, 231, 255);
   width: 30%;
   border: 0.5px solid #000;
+  border-radius: 10px;
 }
 main table {
   font-size: 1.6rem;
