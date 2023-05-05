@@ -38,8 +38,5 @@ function berechne () {
        document.querySelector(".gesamtKcal").innerHTML = gesamtumsatzM.toFixed();
        document.querySelector(".gesamtKj").innerHTML = (gesamtumsatzM * 4.184).toFixed();
     }
-
-
-
 }
 
