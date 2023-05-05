@@ -1,0 +1,162 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+/* general styles */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+.btn{
+    @include font-styles (1.9rem, 'Quicksand', $black);
+    text-align: center;
+    padding: 0.7%;
+    background-color: $bck-btn;
+    color: $black;
+    margin-bottom: 2%;
+    &:hover{
+        color: $hover-btn;
+        background-color: $bck-btn;
+        transition: 0.1s;
+    }
+}
+
+/* specific styles */
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: 
+        radial-gradient(
+                at bottom right,
+                dodgerblue 0,
+                dodgerblue 1em,
+                lightskyblue 1em,
+                lightskyblue 2em,
+                deepskyblue 2em,
+                deepskyblue 3em,
+                gainsboro 3em,
+                gainsboro 4em,
+                lightsteelblue 4em,
+                lightsteelblue 5em,
+                deepskyblue 5em,
+                deepskyblue 6em,
+                lightskyblue 6em,
+                lightskyblue 7em,
+                transparent 7em,
+                transparent 8em
+            ),
+            radial-gradient(
+                at top left,
+                transparent 0,
+                transparent 1em,
+                lightskyblue 1em,
+                lightskyblue 2em,
+                deepskyblue 2em,
+                deepskyblue 3em,
+                lightsteelblue 3em,
+                lightsteelblue 4em,
+                gainsboro 4em,
+                gainsboro 5em,
+                deepskyblue 5em,
+                deepskyblue 6em,
+                skyblue 6em,
+                skyblue 7em,
+                dodgerblue 7em,
+                dodgerblue 8em,
+                transparent 8em,
+                transparent 20em
+            ),
+            radial-gradient(
+                circle at center bottom,
+                coral, darkslateblue
+            );
+            background-blend-mode: overlay;
+            background-size: 8em 8em, 8em 8em, cover;
+
+            h1 {
+                text-align: center;
+                @include font-styles (3rem, 'Quicksand', $black);
+                margin-bottom: 2%;
+                margin-top: 2%;
+            }
+            #inputFelder{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2%;
+                label{
+                    @include font-styles (1.8rem, 'Quicksand', $black);
+                    margin-bottom: 3.2%;
+                }
+                input {
+                    @include font-styles (1.8rem, 'Quicksand', $black);
+                    background-color: rgb(190, 231, 255);
+                    border: 0.5px solid $black;
+                    margin-bottom: 3.2%;
+                }
+            }
+            h3{
+                @include font-styles (2rem, 'Quicksand', $black);
+                text-align: center;
+                margin-bottom: 1.5%;
+            }
+            #radioBtn{
+                @include font-styles (1.8rem, 'Quicksand', $black);
+                display: flex;  
+                justify-content: space-around;
+                margin-bottom: 2%;
+            }
+            #aktivitaet{
+                text-align: center;
+                margin-bottom: 2%;
+                h2{
+                  @include font-styles (2rem, 'Quicksand', $black);  
+                  text-align: center;
+                  margin-bottom: 1.5%;
+                }
+                select{
+                    @include font-styles (1.8rem, 'Quicksand', $black);
+                    background-color: rgb(190, 231, 255);
+                    width: 30%;
+                    border: 0.5px solid $black;
+                    }
+                }
+            table {
+                @include font-styles (1.6rem, 'Quicksand', $black);
+                background-color: rgb(190, 231, 255);
+                margin-bottom: 2%;
+                width: 27%;
+                tr{
+                    td{
+                        border: 0.5px solid $black;
+                    }
+                    .dunkler{
+                        background-color: rgb(76, 156, 202);
+                    }
+                    .heller{
+                        background-color: rgb(190, 231, 255);
+                    }
+                }
+            }
+            p{
+                @include font-styles (1.3rem, 'Quicksand', $black);
+                width:30%;
+                text-align: left;
+                margin-bottom: 2%;
+            }
+    }
+           
